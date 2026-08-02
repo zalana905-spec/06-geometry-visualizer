@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student web coding project: Geometry Visualizer">
+  <title>Geometry Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="shell"><nav class="nav"><span class="brand">GEOMETRY LAB</span><span>Interactive model</span></nav></header><main class="shell"><section class="hero"><p class="eyebrow">SECTION 6 • MATH VISUALIZER</p><h1>Explore a circle by changing its radius.</h1></section><section class="panel lab"><div class="controls-box"><label for="radius">Radius: <strong id="radiusValue">8</strong> units</label><input id="radius" type="range" min="2" max="15" value="8"><label for="decimals">Round answers to</label><select id="decimals" class="field"><option value="0">0 decimals</option><option value="1">1 decimal</option><option value="2" selected>2 decimals</option></select><div class="grid results"><div class="card">Diameter<strong id="diameter"></strong></div><div class="card">Circumference<strong id="circumference"></strong></div><div class="card">Area<strong id="area"></strong></div></div></div><svg id="diagram" viewBox="0 0 420 420" role="img" aria-label="Circle radius visualization"><circle cx="210" cy="210" r="128"/><line x1="210" y1="210" x2="338" y2="210"/><circle class="center" cx="210" cy="210" r="6"/><text x="270" y="195">radius</text></svg></section></main>
+<footer class="shell"><img class="footer-avatar" src="images/profile-placeholder.svg" alt="Student profile placeholder">Built with HTML, CSS, and JavaScript • <span id="year"></span></footer>
+<script src="script.js"></script>
+</body>
+</html>

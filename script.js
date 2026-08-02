@@ -1,0 +1,4 @@
+// Section 6: Geometry Visualizer
+// Modify the sample content below, then test every interaction.
+const radius=document.querySelector('#radius'),decimals=document.querySelector('#decimals');function update(){const r=Number(radius.value),places=Number(decimals.value),scale=r/15*165;document.querySelector('#radiusValue').textContent=r;document.querySelector('#diameter').textContent=(2*r).toFixed(places);document.querySelector('#circumference').textContent=(2*Math.PI*r).toFixed(places);document.querySelector('#area').textContent=(Math.PI*r*r).toFixed(places);const circle=document.querySelector('#diagram circle');circle.setAttribute('r',scale);const line=document.querySelector('#diagram line');line.setAttribute('x2',210+scale);document.querySelector('#diagram text').setAttribute('x',210+scale/2-20);}radius.addEventListener('input',update);decimals.addEventListener('change',update);update();
+document.querySelector('#year').textContent=new Date().getFullYear();
